@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#calculator{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    background-color: #fff;
+    border-color: #00ff37;
+    box-shadow: 0 0 72px #00bd29;
+    margin-top: 15%;
+    padding: 40px 30px;
+}
+
+.cal-form{
+  width: 45%;
+  padding: 10px;
+}
+
+input.input-box{
+    width: 96%;
+    height: 33px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
+select.input-box {
+    width: 99%;
+    height: 33px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
+select:focus {
+    border-color: #00ff37;
+    box-shadow: 0 0 10px #00bd29;
+    border: none;
+  }
+
+input:focus {
+    border-color: #00ff37;
+    box-shadow: 0 0 10px #00bd29;
+    border: none;
+  }
+
+.btn input {
+    width: 100%;
+    background-color: #00bd29;
+    text-align: center;
+    border: none;
+    padding: 13px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn input:hover{
+    background-color: #fff;
+    border-color: #00ff37;
+    box-shadow: 0 0 10px #00bd29;
+    transition: all 0.5s;
+    color: #000;
+}
+
+/* result */
+.result{
+    width: 15%;
+    background-color: #EA1179;
+    padding: 10px;
+    color: #fff;
+}
+
+.result h2{
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* details */
+.details{
+    width: 13%;
+    background-color: #9F0D7F;
+    padding: 10px;
+    color: #fff;
+}
+ul#details{
+    list-style: none;
+}
+ul#details li {
+    background: #241468;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+/* history */
+.history{
+    width: 20%;
+    background-color: #241468;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+ul#history {
+    list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
+    overflow-y: scroll;
+    height: 118px;
+}
+ul#history li {
+    background: #EA1179;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+ul#New{
+    list-style: none;
+}
+
+ul#New li {
+    background: #EA1179;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+button#clear {
+    background: #EA1179;
+    color: #fff;
+    width: 39%;
+    padding: 9px;
+    margin-top: 7px;
+    border: none;
+    font-size: 16px;
+}
+
+button#clear:hover{
+    border-color: #EA1179;
+    background-color: #241468;
+    box-shadow: 0 0 20px #EA1179;
+    transition: all 0.3s;
+    
+}
+
+/*like*/
+.likeCountBtn {
+    text-align: center;
+    padding-top: 21px;
+}
+
+.likeCountBtn i {
+    font-size: 50px;
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #res{
+      width: 100% !important;
+  }
+}
